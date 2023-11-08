@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Certificate of completion</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        h1, h3 {
+            font-weight: bold;
+        }
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Certificate of Completion</h1>
+    <h3>This certificate is presented to</h3>
+    <h1>{{ .Participant }}</h1>
+    <h3>For participation in {{ .Course }}</h3>
+    <p>Date: {{ formatDate .DeliveredAt }}</p>
+</body>
+</html>
